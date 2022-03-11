@@ -104,4 +104,8 @@ a, a:hover /*seletor de link, quando passa o mouse em cima*/{
     border-radius: 4px;
 }
 
-
+.dsmovie-form-container {
+    padding: 40px 0; /*se tenho div que é container e colocar padding, vou dar espaçamento entra a borda do container e o conteúdo que é o card*/ /*40px na horizontal e 0 na vertical*/
+    max-width: 480px;
+    
+}

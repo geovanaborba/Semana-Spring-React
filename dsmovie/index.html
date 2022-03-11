@@ -28,6 +28,18 @@
     <main> <!--conteúdo principal da página /parte dos cards-->
         <section id = "dsmovie-card-list" class = "container"> <!--container para separar com margem esq, a parte branca dos cards, igual no header. Id é um identificador que ocorre uma vez só na página. Quando for mais de uma vez, tem que ser classe, por exemplo, nos cards -->
 
+            <div class="dsmovie-pagination-container"> <!--toda a área abaixo da faixa roxa, até os cards-->
+                <div class="dsmovie-pagination-box"> <!--área com caixinha de conteúdo para "próxima página"-->
+                    <button disabled> <!--disabled para deixar apagado no css-->
+                        <img src="/img/arrow.svg" alt="Voltar"></button>
+                    <p>1 de 23</p>
+                    <button >
+                        <img class="dsmovie-flip-horizontal" src="/img/arrow.svg" alt="Próxima"><!--classe para rotacionar a imagem no css-->
+                    </button>
+                </div>
+            </div>
+
+
         <div class="row">
             <div class="col-sm-6 col-lg-4 col-xl-3 mb-3"><!--Bootstrap divide a tela em 12 partes. Se eu quero que a imagem ocupe 1 terço da página, então seria 4/12 partes. Essa div vai ser a div pai dos cards. Aqui está ocupando 6. mb-3 é do bootstrap. Quer dizer margim-bottom:3-->
                 <div class="dsmovie-card">

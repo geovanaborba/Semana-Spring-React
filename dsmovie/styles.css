@@ -26,7 +26,6 @@ header /*cabeçalho*/{
     height: 60px;
     display: flex;
     align-items: center;
-
 }
 
 nav {
@@ -40,7 +39,7 @@ nav h1 /*quando eu tenho algo já dentro de um elemento, utilizo os dois para se
     font-weight: 700;
 }
 
-nav a{
+nav a {
     font-size: 12px;
     font-weight: 400;
 }
@@ -60,12 +59,13 @@ a, a:hover /*seletor de link, quando passa o mouse em cima*/{
 
 }
 
-.dsmovie-card {
-    width: 100%; 
-}
-
 #dsmovie-card-list /* obs: # por ser uma id*/ {
     padding: 40px 0; /*é um espaçamento interno. Nesse caso, terá 40 na vertical e 0 nas laterais*/
+}
+
+.dsmovie-card {
+    width: 100%; 
+    
 }
 
 .dsmovie-card img {

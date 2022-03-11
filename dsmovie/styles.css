@@ -4,6 +4,7 @@
     --color-gray: #ddd;
     --color-purple: #4d41c0;
     --color-white: #fff;
+    --text-gray: #4a4a4a;
 }
 
 * {
@@ -49,12 +50,57 @@ a, a:hover /*seletor de link, quando passa o mouse em cima*/{
     color: unset;
 }
 
-.dsmovie-contact-container /*quando é classe, precisa do ponto na frente*/ {
+.dsmovie-contact-container /*obs: quando é classe, precisa do ponto na frente*/ {
     display: flex;
     align-items: center;
 }
 
 .dsmovie-contact-container img {
     margin-right: 10px;
+
+}
+
+.dsmovie-card {
+    width: 360px;
+    height: 400px;
     
 }
+
+#dsmovie-card-list /* obs: # por ser uma id*/ {
+    padding: 40px 0; /*é um espaçamento interno. Nesse caso, terá 40 na vertical e 0 nas laterais*/
+}
+
+.dsmovie-card img {
+    width: 100%; /*encaixa a imagem no tamanho do card*/
+    border-radius: 8px 8px 0 0; /*arredonda só os cantos definidos com px -> topo esq e topo dir.*/
+}
+
+.dsmovie-card-description {
+    padding: 10px 0 20px 0; /*definição de margem em sentido horário -> topo, dir, baixo, esq*/ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-white);
+    border-radius: 0 0 8px 8px;
+}
+
+.dsmovie-card-description h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.dsmovie-btn, .dsmovie-btn:hover {
+    width: 180px;
+    height: 40px;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+

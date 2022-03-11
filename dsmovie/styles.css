@@ -5,6 +5,7 @@
     --color-purple: #4d41c0;
     --color-white: #fff;
     --text-gray: #4a4a4a;
+    --text-light-gray: #aaa;
 }
 
 * {
@@ -102,10 +103,46 @@ a, a:hover /*seletor de link, quando passa o mouse em cima*/{
     align-items: center;
     justify-content: center;
     border-radius: 4px;
+    border: 0;
 }
 
 .dsmovie-form-container {
     padding: 40px 0; /*se tenho div que é container e colocar padding, vou dar espaçamento entra a borda do container e o conteúdo que é o card*/ /*40px na horizontal e 0 na vertical*/
     max-width: 480px;
-    
+}
+
+.dsmovie-form-description {
+    background-color: var(--color-white);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 8px 8px;
+}
+
+.dsmovie-form-description h3 {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.dsmovie-form{
+    width: 100%; /*deixa a caixa mais larga. Se tirar, ela fica centralizada pequena por causa da config acima*/
+}
+
+.dsmovie-form-group {
+    margin-bottom: 20px;
+}
+
+.dsmovie-form-group label {
+    font-size: 12px;
+    color: var(--text-light-gray);
+}
+
+.dsmovie-form-btn-container{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }

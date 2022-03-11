@@ -216,3 +216,9 @@ a, a:hover /*seletor de link, quando passa o mouse em cima*/{
 .dsmovie-flip-horizontal {
     transform: rotate(180deg);
 }
+
+footer {
+    text-align: center;
+    justify-content: center;
+    color: var(--color-purple);
+}

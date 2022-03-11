@@ -62,12 +62,11 @@ a, a:hover /*seletor de link, quando passa o mouse em cima*/{
 }
 
 #dsmovie-card-list /* obs: # por ser uma id*/ {
-    padding: 40px 0; /*é um espaçamento interno. Nesse caso, terá 40 na vertical e 0 nas laterais*/
+    padding: 40px 10px; /*é um espaçamento interno. Nesse caso, terá 40 na vertical e 0 nas laterais*/
 }
 
 .dsmovie-card {
     width: 100%; 
-    
 }
 
 .dsmovie-card img {
@@ -83,13 +82,13 @@ a, a:hover /*seletor de link, quando passa o mouse em cima*/{
     justify-content: space-between;
     background-color: var(--color-white);
     border-radius: 0 0 8px 8px;
-    height: 220px;
+    height: 190px;
 }
 
 .dsmovie-card-description h3 {
     font-size: 14px;
     font-weight: 700;
-    margin-bottom: 23px;
+    margin-bottom: 10px;
     text-align: center;
 }
 

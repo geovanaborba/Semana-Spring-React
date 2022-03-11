@@ -1,17 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
+:root /*serve para selecionar o elemento raíz do documento. Assim que se cria variável no css*/{
+    --color-gray: #ddd;
+    --color-purple: #4d41c0;
+    --color-white: #fff;
+}
+
 * {
     box-sizing: border-box; /*borda dos elementos não ocupa área*/
     font-family: 'Open Sans', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 { /*preciso fazer isso, porque o bootstrap sobrescreve o (*)*/
+    margin: 0;
+}
+
 html, body {
-    background-color: #ddd;
+    background-color: var(--color-gray);
 }
 
 header /*cabeçalho*/{
-    background-color: #4d41c0; /*cor do cabeçalho*/
-    color: #fff; /*cor principal do site*/
+    background-color: var(--color-purple); /*cor do cabeçalho*/
+    color: var(--color-white); /*cor principal do site*/
+    height: 60px;
+    display: flex;
+    align-items: center;
+
 }
 
 nav {
@@ -20,7 +34,27 @@ nav {
     justify-content: space-between;
 }
 
+nav h1 /*quando eu tenho algo já dentro de um elemento, utilizo os dois para separar*/ { 
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav a{
+    font-size: 12px;
+    font-weight: 400;
+}
+
 a, a:hover /*seletor de link, quando passa o mouse em cima*/{
     text-decoration: none;
     color: unset;
+}
+
+.dsmovie-contact-container /*quando é classe, precisa do ponto na frente*/ {
+    display: flex;
+    align-items: center;
+}
+
+.dsmovie-contact-container img {
+    margin-right: 10px;
+    
 }

@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 * {
+    box-sizing: border-box; /*borda dos elementos não ocupa área*/
     font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    background-color: #ddd;
+}
+
+header /*cabeçalho*/{
+    background-color: #4d41c0; /*cor do cabeçalho*/
+    color: #fff; /*cor principal do site*/
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a, a:hover /*seletor de link, quando passa o mouse em cima*/{
+    text-decoration: none;
+    color: unset;
 }
